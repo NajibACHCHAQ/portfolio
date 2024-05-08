@@ -2,8 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import  { useRouter } from "next/navigation";
 
 const Homepage = () => {
+  const router = useRouter();
+  const handleButtonClick = () => {
+    router.push('/portfolio');
+  };
   return (
     <motion.div
       className="h-full"
@@ -30,9 +35,10 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-blue-500 bg-blue-500 text-yellow-300 hover:ring-yellow-300 hover:bg-yellow-300 hover:text-blue-500 ease-in duration-300 font-bold">
+            <button onClick={handleButtonClick} className="p-4 rounded-lg ring-1 ring-blue-500 bg-blue-500 text-yellow-300 hover:ring-yellow-300 hover:bg-yellow-300 hover:text-blue-500 ease-in duration-300 font-bold">
               Voir mes réalisations
             </button>
+            
             <button className="p-4 rounded-lg ring-1 text-blue-500 ring-blue-500  hover:text-blue-700 hover:ring-blue-700 ">
               Me contacter
             </button>

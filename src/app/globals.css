@@ -179,7 +179,7 @@ form {
   body {
     font-family: 'Dancing Script', cursive  !important ;
     background: #3885cc ;
-    background-size: 600% 600%;
+
     animation: gradientAnimation 10s ease-in-out  infinite;
     position: relative;
     bottom: 0;
