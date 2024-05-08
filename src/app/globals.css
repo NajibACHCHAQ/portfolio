@@ -79,6 +79,7 @@ form {
     height: 20px;
     z-index: 1 !important;
     animation: animate 40s linear infinite;
+    animation-delay: 1.2s;
 }
 
 
