@@ -31,9 +31,9 @@ const ContactPage = () => {
   useEffect(() => {
     var typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
-      typeSpeed: 70,
+      typeSpeed: 60,
       showCursor: false,
-      backSpeed: 35,
+      backSpeed: 25,
       loop: true,
     });
     return () => {
@@ -45,10 +45,10 @@ const ContactPage = () => {
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
       <div className="h-full w-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-full w-fit mr-10 lg:h-full lg:w-1/2 flex flex-col items-center text-6xl justify-around">
+        <div className="h-full w-full  mr-10 lg:h-full lg:w-1/2 flex flex-col items-center justify-center">
           <div className="text-[70px] w-fit mx-auto float-l">
           <div id="typed-strings">
-          <p>Je suis là pour vous aider à réaliser vos projets.</p>
+          <p>Je suis là pour <div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">Vous aider</div> à réaliser <div className="p-2 rounded-xl w-fit font-bold bg-blue-700 text-bold text-yellow-400">Vos projets !</div> </p>
           <p><div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">N&apos;hésitez pas !</div> Contacter moi pour discuter de  <div className="p-2 rounded-xl w-fit font-bold bg-blue-700 text-bold text-yellow-400">Vos Idées !</div> </p>
           <p><div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">Ensemble !</div>Nous pouvons <div className="p-2 rounded-xl w-fit font-bold bg-blue-700 text-yellow-400">Créer</div> quelque chose de <div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">Génial !</div></p>
         </div>
