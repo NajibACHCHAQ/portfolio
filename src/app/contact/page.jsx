@@ -19,6 +19,7 @@ const ContactPage = () => {
       setMessage('Un e-mail a été envoyé à Najib');
       setSuccess(true);
       setError(false);
+      formRef.current.reset();
     } catch (error) {
       console.error('Erreur', error);
       setMessage("Une erreur s&apos;est produite lors de l&apos;envoi du message.");
@@ -44,14 +45,13 @@ const ContactPage = () => {
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
       <div className="h-full w-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-full w-full lg:h-full lg:w-1/2 flex flex-col items-center text-6xl justify-around">
-          <div className="text-[70px] float-l">
-            <div id="typed-strings">
-              <p>Vous cherchez <strong>un développeur passionné</strong>.</p>
-              <p>Vous cherchez <strong>une personne prête à relever tous les défis</strong>.</p>
-              <p>Ne cherchez plus !</p>
-              <p>Vous avez trouvé.</p>
-            </div>
+        <div className="h-full w-fit mr-10 lg:h-full lg:w-1/2 flex flex-col items-center text-6xl justify-around">
+          <div className="text-[70px] w-fit mx-auto float-l">
+          <div id="typed-strings">
+          <p>Je suis là pour vous aider à réaliser vos projets.</p>
+          <p>N&apos;hésitez pas à me contacter pour discuter de vos idées.</p>
+          <p>Ensemble, nous pouvons créer quelque chose de Génial !</p>
+        </div>
             <h2><span className="animation-entete" id="typed"></span></h2>
           </div>
         </div>
@@ -63,7 +63,7 @@ const ContactPage = () => {
           <input id="monInput" name="user_email" type="email" className="outline-none" placeholder="Entrez votre adresse e-mail" required />
           <span>A bientôt</span>
           <button className="w-[50%] mx-auto bg-green-200 rounded font-semibold text-gray-600 p-4 hover:bg-green-400">Envoyer</button>
-          {success && <span className="text-green-600 font-semibold">Votre message a été envoyé avec succès !</span>}
+          {success && <span className="text-green-600 font-semibold mx-auto">Votre message a été envoyé avec succès !</span>}
           {error && <span className="text-red-600 font-semibold">Une erreur s&apos;est produite lors de l&apos;envoi du message !</span>}
         </form>
       </div>
