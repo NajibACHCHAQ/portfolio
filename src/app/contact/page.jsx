@@ -49,8 +49,8 @@ const ContactPage = () => {
           <div className="text-[70px] w-fit mx-auto float-l">
           <div id="typed-strings">
           <p>Je suis là pour vous aider à réaliser vos projets.</p>
-          <p>N&apos;hésitez pas à me contacter pour discuter de vos idées.</p>
-          <p>Ensemble, nous pouvons créer quelque chose de Génial !</p>
+          <p><div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">N&apos;hésitez pas !</div> Contacter moi pour discuter de  <div className="p-2 rounded-xl w-fit font-bold bg-blue-700 text-bold text-yellow-400">Vos Idées !</div> </p>
+          <p><div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">Ensemble !</div>Nous pouvons <div className="p-2 rounded-xl w-fit font-bold bg-blue-700 text-yellow-400">Créer</div> quelque chose de <div className="p-2 rounded-xl w-fit font-bold bg-yellow-400 text-blue-700">Génial !</div></p>
         </div>
             <h2><span className="animation-entete" id="typed"></span></h2>
           </div>
