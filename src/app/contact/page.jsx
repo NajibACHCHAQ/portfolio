@@ -14,10 +14,10 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/mot-de-passe-oublie', { email });
-      setMessage('Un e-mail de réinitialisation a été envoyé à votre adresse e-mail.');
+      await axios.post('/api/email', { email });
+      setMessage('Un e-mail à été envoyé à Najib');
     } catch (error) {
-      console.error('Erreur lors de la réinitialisation du mot de passe :', error);
+      console.error('Erreur', error);
       setMessage("Une erreur s'est produite lors de la réinitialisation du mot de passe.");
     }
   };
@@ -87,7 +87,7 @@ const ContactPage = () => {
         </div>
         {/* FORM CONTAINER */}
         <form
-          // onSubmit={}
+          onSubmit={handleSubmit}
           ref={form}
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-5 bg-cover bg-center bg-[url('/10217033.jpg')]"
         >
