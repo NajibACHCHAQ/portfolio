@@ -23,7 +23,7 @@ const ContactPage = () => {
     } catch (error) {
       // Affichez un message d'erreur si la demande échoue
       console.error('Erreur', error);
-      setMessage("Une erreur s'est produite lors de l'envoi du message.");
+      setMessage("Une erreur est arrivée");
       setError(true);
       setSuccess(false);
     }
@@ -84,7 +84,7 @@ const ContactPage = () => {
           />
           <input
             name="user_email"
-            type="email" // Changez le type en "email" pour une meilleure validation côté client
+            type="email"
             className="outline-none"
             id="monInput"
             placeholder="Entrez votre adresse e-mail"
@@ -100,7 +100,7 @@ const ContactPage = () => {
           )}
           {error && (
             <span className="text-red-600 font-semibold">
-              Un erreur s'est produite lors de l'envoi du message !
+              Une erreur s'est produite lors de l'envoi du message !
             </span>
           )}
         </form>
