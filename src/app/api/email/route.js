@@ -1,4 +1,4 @@
-import sendEmail from '@/utils/sendResetPasswordEmail';
+import sendEmail from '@/utils/sendEmail';
 
 import { NextResponse } from 'next/server';
 
