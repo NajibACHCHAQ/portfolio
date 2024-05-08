@@ -21,7 +21,7 @@ const ContactPage = () => {
       setError(false);
     } catch (error) {
       console.error('Erreur', error);
-      setMessage("Une erreur s'est produite lors de l'envoi du message.");
+      setMessage("Une erreur s&apos;est produite lors de l&apos;envoi du message.");
       setError(true);
       setSuccess(false);
     }
@@ -64,7 +64,7 @@ const ContactPage = () => {
           <span>A bientôt</span>
           <button className="w-[50%] mx-auto bg-green-200 rounded font-semibold text-gray-600 p-4 hover:bg-green-400">Envoyer</button>
           {success && <span className="text-green-600 font-semibold">Votre message a été envoyé avec succès !</span>}
-          {error && <span className="text-red-600 font-semibold">Une erreur s'est produite lors de l'envoi du message !</span>}
+          {error && <span className="text-red-600 font-semibold">Une erreur s&apos;est produite lors de l&apos;envoi du message !</span>}
         </form>
       </div>
     </motion.div>
