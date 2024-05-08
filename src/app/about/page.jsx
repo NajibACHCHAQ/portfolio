@@ -59,13 +59,13 @@ const AboutPage = () => {
               </motion.svg>
             </h1>
             <p className="text-lg">
-              Je suis ACHCHAQ Najib, un développeur web passionné par la création d'expériences numériques uniques et innovantes.
+              Je suis ACHCHAQ Najib, un développeur web passionné par la création d&apos;expériences numériques uniques et innovantes.
               À travers ce portfolio, je vous invite à explorer mon parcours, mes compétences et mes projets dans le domaine du développement web.
               Avec une solide expertise dans les technologies modernes telles que HTML, CSS, JavaScript, ainsi que des frameworks comme React.js et Node.js, 
-              je suis constamment à la recherche de nouveaux défis et d'opportunités pour mettre en pratique mes connaissances et ma créativité.
+              je suis constamment à la recherche de nouveaux défis et d&apos;opportunités pour mettre en pratique mes connaissances et ma créativité.
               Ce portfolio est le reflet de mon engagement à fournir des solutions web de haute qualité, alliant design esthétique et fonctionnalités performantes. 
-              Que ce soit la création de sites web dynamiques, d'applications interactives ou de solutions e-commerce, je suis là pour donner vie à vos idées.
-              N'hésitez pas à explorer mes projets et à me contacter pour discuter de vos besoins en développement web. Merci de votre visite et à bientôt sur le web !
+              Que ce soit la création de sites web dynamiques, d&apos;applications interactives ou de solutions e-commerce, je suis là pour donner vie à vos idées.
+              N&apos;hésitez pas à explorer mes projets et à me contacter pour discuter de vos besoins en développement web. Merci de votre visite et à bientôt sur le web !
             </p>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
