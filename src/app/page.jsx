@@ -25,7 +25,7 @@ const Homepage = () => {
           {/* DESC */}
           <p className="md:text-xl">
           Explorez mon portfolio pour découvrir le monde du développement web à travers mes yeux. 
-          Des projets passionnants, des solutions ingénieuses et une passion sans fin pour l'innovation vous attendent. 
+          Des projets passionnants, des solutions ingénieuses et une passion sans fin pour l\'innovation vous attendent. 
           Bienvenue dans mon univers numérique, où chaque ligne de code est une histoire en devenir.
           </p>
           {/* BUTTONS */}

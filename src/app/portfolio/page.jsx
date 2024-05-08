@@ -117,7 +117,7 @@ const PortfolioPage = () => {
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px] "
+            className="w-120 h-120 md:w-[500px] md:h-[500px] "
           >
             <defs>
               <path
@@ -133,9 +133,9 @@ const PortfolioPage = () => {
           </motion.svg>
           <Link
             href="/contact"
-            className="cursor w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="cursor p-4 w-60 h-60 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
-            Contact Me
+            Contactez Moi
           </Link>
         </div>
       </div>

@@ -240,7 +240,7 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Stage Dev Web 
+                    Stage Dev Web Desktop
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
@@ -251,9 +251,9 @@ const AboutPage = () => {
                     2024 - Present
                   </div>
                   {/* JOB COMPANY */}
-                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
-                  </div> */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    
+                  </div>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
