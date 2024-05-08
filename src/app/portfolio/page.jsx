@@ -111,7 +111,6 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="bg-gradient-animation w-screen h-[130%] relative bottom-0 mb-0 pb-0 flex flex-col  items-center justify-center text-center">
-        {/* <h1 className="mt-10 text-m font-bold md:text-4xl lg:text-6xl xl:text-8xl">Vous avez un Projet?</h1> */}
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
