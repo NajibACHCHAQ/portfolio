@@ -13,8 +13,8 @@ const sendEmail = (email) => { // Recevoir l'email comme argument
     const mailOptions = {
       from: 'portfolio-najib@gmail.com',
       to: email, // Utiliser l'email reçu comme destinataire
-      subject: 'Réinitialisation de mot de passe',
-      text: `Un nouveau message de contact `,
+      subject: 'Nouveau message de portfolio',
+      text: {message, userEmail},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

@@ -11,11 +11,11 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Récupérez les valeurs du formulaire
-    const email = form.current.user_email.value;
+    const userEmail = form.current.user_email.value;
     const userMessage = form.current.user_message.value;
     try {
       // Effectuez une demande POST avec les données du formulaire
-      await axios.post('/api/email', { email, message: userMessage });
+      await axios.post('/api/email', { userEmail, message: userMessage });
       // Affichez un message de succès si la demande est réussie
       setMessage('Un e-mail a été envoyé à Najib');
       setSuccess(true);

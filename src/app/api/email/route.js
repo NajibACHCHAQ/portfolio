@@ -3,7 +3,7 @@ import sendEmail from '/utils/sendEmail.js';
 
 export async function POST(request) {
     try {
-        const { email } = await request.json();        
+        const { email } = "najib.achchaq@gmail.com";        
         console.log('Tentative d\'envoi de courriel à :', email);
         await sendEmail(email); // Passer l'email comme argument
         console.log('E-mail envoyé avec succès à :', email);
