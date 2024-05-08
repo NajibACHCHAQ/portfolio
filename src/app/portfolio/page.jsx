@@ -54,55 +54,43 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative bottom-0" ref={ref}>
-        
-        <ul class="background">
-        <div className="text-white font1 font-semibold w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <a className="rotate" href="http://www.thismanslife.co.uk" target="_blank">Mes Réalisations</a>
-        </div>
+        <ul className="background">
+          <div className="text-white font1 font-semibold w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+            {items.map((item) => (
+              <li key={item.id}></li>
+            ))}
+            <a className="rotate" href="http://www.thismanslife.co.uk" target="_blank" rel="noopener noreferrer">Mes Réalisations</a>
+          </div>
         </ul>
-         
-
-        <div className="sticky  w-screen top-0 flex h-screen gap-4 items-center overflow-hidden">
+        <div className="sticky w-screen top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex ">
-            <div className="h-screen  w-screen flex flex-col  items-center justify-center  " />
             {items.map((item) => (
               <div
-                className={`h-screen w-screen  bottom-0 flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen w-screen bottom-0 flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
                 <div className="w-screen h-[75%] items-center justify-between flex flex-col text-white">
-                  <h1 className="portfolio-title font1   mx-auto w-[fit-content] text1  text-m font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                  <h1 className="portfolio-title font1 mx-auto w-[fit-content] text1 text-m font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
                   <div className="flex w-[90%] justify-center mx-auto mb-30 ">
-                    <div className="mx-auto mt-30 img-container relative  w-screen h-76 md:w-96 md:h-64 ">
-                      <Image src={item.img} alt=""  fill  />
+                    <div className="mx-auto mt-30 img-container relative w-screen h-76 md:w-96 md:h-64 ">
+                      <Image src={item.img} alt="" fill />
                     </div>
-                    <div className="mx-auto mt-30 img-container relative  w-screen h-76 md:w-96 md:h-64 ">
-                      <Image src={item.img} alt=""  fill />
+                    <div className="mx-auto mt-30 img-container relative w-screen h-76 md:w-96 md:h-64 ">
+                      <Image src={item.img} alt="" fill />
                     </div>
-                    <div className="mx-auto mt-30 img-container relative  w-screen h-76 md:w-96 md:h-64 ">
-                      <Image src={item.img} alt=""  fill className="rounded" />
+                    <div className="mx-auto mt-30 img-container relative w-screen h-76 md:w-96 md:h-64 ">
+                      <Image src={item.img} alt="" fill className="rounded" />
                     </div>
                   </div>               
                   <div className="mx-auto flex flex-row w-[fit-content] items-center ">
-                    <p className=" w-[fit-content] md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                    {item.desc}
-                  </p>
-                  <Link href={item.link} className="flex justify-end">
-                    <button className="px-4 py-2 mt-5 rounded-full h-[100%] w-[100%] bg-white text-gray-600 font-semibold m-4 ">Voir</button>
-                  </Link>
+                    <p className="w-[fit-content] md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                      {item.desc}
+                    </p>
+                    <Link href={item.link} passHref>
+                      <button className="px-4 py-2 mt-5 rounded-full h-[100%] w-[100%] bg-white text-gray-600 font-semibold m-4 ">Voir</button>
+                    </Link>
                   </div>                 
                 </div>
               </div>
@@ -110,8 +98,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="bg-gradient-animation w-screen h-[130%] relative bottom-0 mb-0 pb-0 flex flex-col  items-center justify-center text-center">
-        {/* <h1 className="mt-10 text-m font-bold md:text-4xl lg:text-6xl xl:text-8xl">Vous avez un Projet?</h1> */}
+      <div className="bg-gradient-animation w-screen h-[130%] relative bottom-0 mb-0 pb-0 flex flex-col items-center justify-center text-center">
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -127,7 +114,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Vous avez un Projet ? ..  N'ésitez Pas ! ..
+                Vous avez un Projet ? ..  N&apos;ésitez Pas ! ..
               </textPath>
             </text>
           </motion.svg>
@@ -144,3 +131,4 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
