@@ -8,24 +8,23 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  setError(false);
-  setSuccess(false);
+const sendEmail = (email) => { // Recevoir l'email comme argument
+  return new Promise((resolve, reject) => {
+    const mailOptions = {
+      from: 'portfolio-najib@gmail.com',
+      to: email, // Utiliser l'email reçu comme destinataire
+      subject: 'Réinitialisation de mot de passe',
+      text: `Un nouveau message de contact `,
+    };
 
-  const mailOptions = {
-    from: 'portfolio-najib@gmail.com',
-    to: 'najib.achchaq@getMaxListeners.com',
-    subject: 'Réinitialisation de mot de passe',
-    text: `Un nouveau message de contact `,
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      setError(true);
-    } else {
-      setSuccess(true);
-      form.current.reset();
-    }
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve(info);
+      }
+    });
   });
 };
+
+export default sendEmail; // Exporter la fonction sendEmail
