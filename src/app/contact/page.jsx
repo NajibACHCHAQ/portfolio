@@ -100,7 +100,7 @@ const ContactPage = () => {
           )}
           {error && (
             <span className="text-red-600 font-semibold">
-              Une erreur s'est produite lors de l'envoi du message !
+              Un erreur s'est produite lors de l'envoi du message !
             </span>
           )}
         </form>
