@@ -8,13 +8,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmail = (email) => { // Recevoir l'email comme argument
+const sendEmail = (message, userEmail) => { // Passer le message et l'email comme arguments
   return new Promise((resolve, reject) => {
     const mailOptions = {
       from: 'portfolio-najib@gmail.com',
-      to: email, // Utiliser l'email reçu comme destinataire
+      to: 'najib.achchaq@gmail.com',
       subject: 'Nouveau message de portfolio',
-      text: {message, userEmail},
+      text: `Message: ${message}\n\nEmail: ${userEmail}`, // Concaténer le message et l'email en une seule chaîne
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -28,3 +28,4 @@ const sendEmail = (email) => { // Recevoir l'email comme argument
 };
 
 export default sendEmail; // Exporter la fonction sendEmail
+

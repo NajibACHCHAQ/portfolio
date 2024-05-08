@@ -78,7 +78,7 @@ form {
     width: 20px;
     height: 20px;
     z-index: 1 !important;
-    animation: animate 30s linear infinite;
+    animation: animate 40s linear infinite;
 }
 
 
@@ -89,7 +89,7 @@ form {
     width: 254px;
     height: 254px;
     bottom: -254px;
-    animation-delay: 1s;
+
     background: rgb(200, 196, 196);
 }
 .background li:nth-child(1) {
@@ -97,7 +97,7 @@ form {
     width: 295px;
     height: 295px;
     bottom: -705px;
-    animation-delay: 5s;
+
     background: rgba(241, 181, 91, 0.701);
 }
 .background li:nth-child(2) {
