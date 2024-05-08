@@ -104,7 +104,78 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              {/* Your skill list */}
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                JavaScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Dart
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                TypeScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                React.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Next.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Flutter
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Android Studio
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Angular
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Java
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Java
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Tailwind CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                MongoDB
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                PostgreSQL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Node.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Express.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Spring Boot
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Framer Motion
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Three.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Supabase
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Docker
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Firebase
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Git
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-800 text-white hover:bg-white hover:text-blue-800">
+                Figma
+              </div>
             </motion.div>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -140,17 +211,113 @@ const AboutPage = () => {
               className="font-bold text-2xl"
             >
               EXPERIENCE
+              EXPERIENCE
             </motion.h1>
+            {/* EXPERIENCE LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
-              {/* Your experience list */}
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Stage Dev Web 
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                    React Electron Next Supabase PostgreSQL TypeScript{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2024 - Present
+                  </div>
+                  {/* JOB COMPANY */}
+                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Microsoft
+                  </div> */}
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Technicien Méthodes Process
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                    Process Optimisation Rentabilité Performance Lean Relation-Client{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2019 - 2022{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    FM Logistic
+                  </div>
+                </div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Technicien Méthodes Process
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                    Process Optimisation Rentabilité Performance Lean Relation-Client{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2019 - 2022{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Microsoft
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
             </motion.div>
           </div>
-        </div>
-        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+        </div>        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
